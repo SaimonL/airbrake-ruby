@@ -44,9 +44,9 @@ module Airbrake
         def check_notify_ability(config)
           promise = Airbrake::Promise.new
 
-          unless config.error_notifications
-            return promise.reject('error notifications are disabled')
-          end
+          #unless config.error_notifications
+          #  return promise.reject('error notifications are disabled')
+          #end
 
           if ignored_environment?(config)
             return promise.reject(
