@@ -1,4 +1,6 @@
 RSpec.describe Airbrake::Filters::SqlFilter do
+  require 'ostruct'
+
   shared_examples "query filtering" do |test|
     test[:dialects].each do |dialect|
       it "correctly filters SQL like `#{test[:input]}' (#{dialect} dialect)" do

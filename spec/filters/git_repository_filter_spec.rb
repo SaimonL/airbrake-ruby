@@ -52,7 +52,7 @@ RSpec.describe Airbrake::Filters::GitRepositoryFilter do
     it "attaches context/repository" do
       git_repository_filter.call(notice)
       expect(notice[:context][:repository]).to match(
-        'github.com/airbrake/airbrake-ruby',
+        'git@github.com:SaimonL/airbrake-ruby.git',
       )
     end
   end
