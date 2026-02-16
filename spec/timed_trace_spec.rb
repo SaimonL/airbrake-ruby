@@ -110,9 +110,11 @@ RSpec.describe Airbrake::TimedTrace do
     context "when multiple spans were captured" do
       before do
         timed_trace.start_span('operation')
+        sleep 0.01 # CPU these days are so fast that you will end up getting 0.0 duration
         timed_trace.stop_span('operation')
 
         timed_trace.start_span('another operation')
+        sleep 0.01 # CPU these days are so fast that you will end up getting 0.0 duration
         timed_trace.stop_span('another operation')
       end
 
