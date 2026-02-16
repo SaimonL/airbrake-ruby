@@ -14,7 +14,7 @@ framework we offer the airbrake gem (https://github.com/airbrake/airbrake). It
 has additional features such as reporting of any unhandled exceptions
 automatically, integrations with Resque, Sidekiq, Delayed Job and many more.
 DESC
-  s.author      = 'Airbrake Technologies, Inc.'
+  s.authors     = ['Airbrake Technologies, Inc.', 'Saimon Lovell']
   s.email       = 'support@airbrake.io'
   s.homepage    = 'https://airbrake.io'
   s.license     = 'MIT'

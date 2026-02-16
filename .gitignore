@@ -8,3 +8,7 @@ coverage
 .ruby-gemset
 config
 README
+
+# IDE
+.vscode
+.idea

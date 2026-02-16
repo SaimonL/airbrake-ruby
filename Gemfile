@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 gemspec
 
+gem 'base64'
+
 gem 'rubocop', '~> 1.16', require: false
 gem 'rubocop-rake', '~> 0.5', require: false
 gem 'rubocop-rspec', '~> 2.3', require: false

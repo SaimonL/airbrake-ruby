@@ -4,6 +4,10 @@
 
 - No pending changes to be released
 
+### [v6.3.0][v6.3.0] (Feb 16, 2026)
+
+- Update gems.
+
 ### [v6.2.2][v6.2.2] (October 4, 2023)
 
 - Use `error_host` instead of `host` to avoid triggering a deprecation warning
