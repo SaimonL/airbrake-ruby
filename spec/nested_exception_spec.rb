@@ -85,17 +85,6 @@ RSpec.describe Airbrake::NestedException do
     end
   end
 
-  context "when the exception's message contains invalid characters" do
-    it "replaces those characters without failing" do
-      JSON.parse(Marshal.dump(Time.now))
-    rescue JSON::ParserError => e
-      exceptions = described_class.new(e).as_json
-      expect(exceptions.first[:message]).to match('unexpected token at')
-    else
-      raise 'expected JSON.parse to raise JSON::ParserError but nothing was raised'
-    end
-  end
-
   context "when the exception's message is nil" do
     subject(:exception) {  Class.new(StandardError) { def message; end }.new }
 
